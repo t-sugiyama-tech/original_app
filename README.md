@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## タイトル
+### 『画像・映像連動型スポーツショップapp』
+ 
+## URL
+https://shielded-crag-66667.herokuapp.com/
 
-Things you may want to cover:
+## 制作背景
+#### Youtube等の動画サイトで、スポーツ映像を楽しんでいるとその選手が身につけているユニフォーム、アイテム、道具が欲しくなることがあります。しかし、これまでのアプリケーションサービスでは、『動画配信サイト』と『商品を購入するサイト』が別々になり、『動画配信サイト』を訪れた後、改めて別のサイトへ訪れる必要性がありました。これは、Userにとっては不便だと感じました。そこで、同一サイト内で動画を楽しむページ、商品を購入するページを実装し、Userの手間を省くことができるのではないかと考えました。また、サイト内でUserが留まる時間が増加すれば、サイトの運営者は広告収入の増加が見込めるのではないかと考えました。
+  
+## 工夫点と機能
+### 基本方針:User(サーファー)が、どのようなフロント実装や機能が望んでいるか、楽しんで利用してもらえるかをイメージして実装しました。
+#### API(Open-weather-map)による天気予報
+#### トップページにJQuery.Ripple.jsを採用し、水中にいる臨場感をよりもってもらえるよう画面実装を行いました。
+#### 配信される記事が、Userがいつ頃のことをさしているのかを把握しやすくなるよう、カレンダー機能（Datepicker）を同一ページ内に実装しました。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 今後追加したい機能
+#### 複数枚による画像投稿機能
+#### サイト運営者による管理機能(namespace)
+#### プッシュ通知機能(push.js)
+#### 商品購入機能(pay.jp
