@@ -1,0 +1,27 @@
+.side-bar
+  .side-bar__inner
+    .side-bar__inner__navi
+      = icon('fas', 'bars', class: 'side-bar__inner__navi--open-icon')
+    %ul.side-bar__inner__menu 
+      %li.side-bar__inner__menu--list 
+        = link_to "HOME", root_path
+      %li.side-bar__inner__menu--list
+        = link_to "EVERY POST", ""
+      - if user_signed_in?
+        %li.side-bar__inner__menu--list
+          = link_to "NEW POST", new_post_path
+        %li.side-bar__inner__menu--list
+          = link_to "LOG OUT", destroy_user_session_path, method: :delete
+      - else
+        %li.side-bar__inner__menu--list
+          = link_to "NEW ACOUNT", new_user_registration_path
+        %li.side-bar__inner__menu--list
+          = link_to "LOG IN", new_user_session_path
+      %li.side-bar__inner__menu--list
+        = link_to "ITEM LIST", items_path
+      %li.side-bar__inner__menu--list
+        = link_to "NEWS & WEATHER", reports_posts_path
+      %li.side-bar__inner__menu--list
+        = link_to "Q&A", inquiry_posts_path
+      .side-bar__inner__close
+        = icon('fas', 'times', class: 'side-bar__inner__close--icon')

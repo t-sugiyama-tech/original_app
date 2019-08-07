@@ -1,0 +1,118 @@
+.wrapper {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+.contents-box { 
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  box-sizing: border-box;
+
+  // 天気予報・Open weather map
+  &__top-content {
+    margin: 0 auto;
+    width: 80%;
+    height: 260px;
+    padding-top: 20px;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: goldenrod;
+    }
+    &__weather {
+      width: 90%;
+      height: 210px;
+      margin: 0 auto;
+      position: relative;
+      background-color: white;
+      &--city-name {
+        position: absolute;
+        top: 0;
+        left: 5px;
+      }
+      &__lists {
+        width: 90%;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // ニュース
+  &__main-contents {
+    margin: 40px auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    &__left-contents {
+      width: 65%;
+      height: 100%;
+      margin: 5px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: goldenrod;
+      }
+      &__report:hover {
+        box-shadow: 0px 6px 3px rgba(104, 101, 101, 0.6);
+      }
+      &__report {
+        width: 95%;
+        height: 150px;
+        border-left: 10px solid goldenrod;
+        padding: 0.5em 0.5em;
+        margin: 10px 0;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        &--image {
+        margin: 1px;
+        width: 30%;
+        height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__content {
+          margin-left: 10px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          &--title {
+            width: 100%;
+            height: 25px;
+            border-bottom: solid 1px goldenrod;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    // カレンダー
+    &__right-contents {
+      width: 30%;
+      height: 100%;
+      margin: 10px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: goldenrod;
+      }
+      &--calender {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+    }
+  }
+}

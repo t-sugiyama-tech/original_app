@@ -1,0 +1,62 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+  // background: linear-gradient(to right, #F5F5F5, rgb(199, 191, 191)); 自分の参考として残しています。
+  .side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 1000;
+    background: white;
+    &__inner {
+      display: flex;
+      &__navi {
+        margin: 0 auto;
+        &--open-icon {
+          font-size: 2em;
+          margin-top: 40px;
+          color: gray;
+        }
+      }
+      li:hover {
+        background-color: gray;
+        a {
+          color: white;
+        }
+      }
+      &__menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        width: 250px;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 30px 0 0 10px;
+        &--list {
+          width: 220px;
+          padding: 15px;
+          a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 15px;
+          }
+        }
+      }
+      &__close {
+        &--icon {
+          position: absolute;
+          top: 5px;
+          left: 235px;
+          font-size: 1.5em;
+          color: gray;
+        }
+      }
+    }
+  }
+}
