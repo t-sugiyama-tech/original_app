@@ -8,7 +8,7 @@ $(document).on('turbolinks:load', function() {
     var icon = data.list[i].weather[0].icon;
     var html =
     '<div class="weather-report">' +
-      '<img src="http://openweathermap.org/img/w/' + icon + '.png">' +
+      '<img src="https://openweathermap.org/img/w/' + icon + '.png">' +
       '<div class="weather-date">' + day + '</div>' +
       '<div class="weather-main">'+ data.list[i].weather[0].main + '</div>' +
       '<div class="weather-temp">' + Math.round(data.list[i].main.temp) + '℃</div>' +
@@ -19,7 +19,7 @@ $(document).on('turbolinks:load', function() {
   $(function() {
     var API_KEY = '054be46ddb59acd43356f1b72bb66903'
     var city = 'Tokyo';
-    var url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&lang=ja&APPID=' + API_KEY;
+    var url = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&lang=ja&APPID=' + API_KEY;
     $.ajax({
       url: url,
       dataType: "json",
