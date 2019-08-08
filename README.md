@@ -11,7 +11,7 @@ https://shielded-crag-66667.herokuapp.com/
 
 ## アプリの一部画面
 #### トップページ
-![トップページ](https://user-images.githubusercontent.com/51018339/62623221-4f977800-b95b-11e9-83c9-f884031ae029.png)
+![トップページ](https://user-images.githubusercontent.com/51018339/62712075-20edd000-ba35-11e9-98e1-11da00b1c3af.png)
 #### News&Weatherページ
 ![NEWS＆WEATHER](https://user-images.githubusercontent.com/51018339/62623391-ac932e00-b95b-11e9-90d9-9fb1e48e6af8.png)
 　
