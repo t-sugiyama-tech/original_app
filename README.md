@@ -25,4 +25,4 @@ https://shielded-crag-66667.herokuapp.com/
 #### ・複数枚による画像投稿機能
 #### ・サイト運営者による管理機能(namespace)
 #### ・プッシュ通知機能(push.js)
-#### ・商品購入機能(pay.jp
+#### ・商品購入機能(pay.jp）
