@@ -1,7 +1,7 @@
 # README
 
 ## タイトル
-### 『画像・映像連動型スポーツショップapp』
+### 『画像・映像連動型スポーツショップapp』　選択したスポーツは、surfing
  
 ## URL
 https://shielded-crag-66667.herokuapp.com/
