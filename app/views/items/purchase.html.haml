@@ -1,0 +1,18 @@
+.purchase-container
+  .purchase-container__central-images
+    .purchase-container__central-images__background
+      %h1.purchase-container__central-images__background--text-l 
+        購入確認画面
+      %p.purchase-container__central-images__background--text-s  
+        よろしければ購入ボタンを押してください。
+    .purchase-container__central-images__item-list
+      = link_to "商品一覧に戻る", items_path
+    = image_tag "common/background-image3.png", class: "purchase-container__central-images__slide-image"
+  .purchase-container__items-box
+    .purchase-container__items-box__purchase-item
+    .purchase-container__items-box__display 
+      %h4 合計
+      .purchase-container__items-box__display--total-price
+        %h4 ¥ 5,000
+    .purchase-container__items-box__purchase-btn
+      = link_to "購入", ""

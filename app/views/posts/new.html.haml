@@ -1,1 +1,30 @@
-new ただいま実装中
+.wrapper
+  = render "side-navi.html.haml"
+= form_with model: @post, local: true  do |post|
+  .main-cotents
+    -# 画像投稿セクション
+    .main-cotents__post-images
+      .main-cotents__post-images__drop-box
+        %h2 投稿する画像を選択してください
+        .main-cotents__post-images__drop-box__select-image
+          = post.file_field :images, class: "main-cotents__post-images__drop-box__select-image--file_field", multiple: true
+          = post.submit 'New Post', class: "main-cotents__post-images__drop-box__select-image--submit"
+
+      .main-cotents__post-images--notice
+        %p ・同時に複数枚の画像が投稿できます
+        %p ・不適切な投稿はやめましょう
+
+    -# 本人ユーザーの投稿へのタイトル、カテゴリー、コメント
+    .main-cotents__post-container
+      .main-cotents__post-container__title
+        = post.label 'タイトル'
+        = post.text_field :title, placeholder: " 投稿する写真にタイトルをつけよう", class: "main-cotents__post-container__title--form"
+        %p 不適切な投稿はやめましょう
+      .main-cotents__post-container__category
+        %h2 カテゴリー 
+        %p カテゴリーを選択してください
+        .main-cotents__post-container__category--option
+          = post.select :category, {"ボード": :category_1,'メンズ水着': :category_2,'レディース水着': :category_3,'その他': :category_4 }, id: "post_category"
+      .main-cotents__post-container__comment
+        = post.label 'コメント'
+        = post.text_area :comment, placeholder: " 投稿する写真にコメントをつけよう", class: "main-cotents__post-container__comment--form"

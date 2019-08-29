@@ -15,12 +15,11 @@
 .item-header {
   width: 100%;
   height: 80px;
-  margin-left: 40px;
   box-shadow: 0px 6px 3px rgba(0,0,0,0.6);
   &__inner {
     width: 80%;
     height: 80px;
-    margin: 0 auto;
+    margin: 0 0 0 170px;
     position: relative;
     &__page-title {
       width: 40%;
@@ -76,11 +75,11 @@
 .main-container {
   width: 100%;
   height: 100%;
-  margin: 20px 0 0 40px;
+  margin-top: 20px;
   &__inner {
     width: 90%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 0 0 110px;
     &__title {
       height: 60px;
       h2 {
@@ -124,7 +123,7 @@
             width: 50px;
             height: 50px;
             border-radius: 25px;
-            background: rgba(231, 170, 170, 0.3);
+            background: rgba(85, 82, 82, 0.3);
             text-align: center;
             span {
             color: white;
@@ -132,6 +131,9 @@
             line-height: 50px;
             height: 50px;
             }
+          }
+          &--cart-btn-pink {
+            background: rgba(212, 130, 82, 0.3);
           }
           &--item-name {
             display: flex;
@@ -186,11 +188,11 @@
 .item-footer {
   width: 100%;
   height: 100%;
-  margin: 20px 0 0 40px;
+  margin-top: 20px;
   &__top {
     width: 90%;
     height: 50px;
-    margin: 0 auto;
+    margin: 0 0 0 100px;
     background-color: gray;
     display: flex;
     align-items: center;
@@ -205,7 +207,7 @@
   &__bottom {
     width: 90%;
     height: 150px;
-    margin: 0 auto;
+    margin: 0 0 0 100px;
     background-color: white;
   }
 }

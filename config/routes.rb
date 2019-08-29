@@ -9,5 +9,9 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :items 
+  resources :items do
+    collection do
+      get 'purchase'
+    end
+  end
 end
